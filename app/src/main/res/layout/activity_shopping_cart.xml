@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ShoppingCartActivity"
+    android:background="#EEEEEE"
+    android:padding="@dimen/dim_7"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/shoppingCart"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/noOfItemsInCartTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_items_in_the_cart"
+                android:textColor="#000"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/backBtnSCTIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn_img"
+            android:padding="@dimen/dim_12"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="?actionBarSize"
+            android:src="@drawable/sort"
+            android:layout_gravity="end|center"
+            android:padding="@dimen/dim_6"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewShoppingCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:orientation="vertical" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/totalAmountLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/dim_10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/subtotal"
+                    android:textSize="@dimen/font_size_22"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/idTVSubTotalAmt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:layout_gravity="center"
+                    android:text="@string/rs_400_00"
+                    android:textSize="@dimen/font_size_18"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_marginStart="@dimen/dim_10"
+                android:layout_marginEnd="@dimen/dim_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/dim_10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/shipping"
+                    android:textSize="@dimen/font_size_22"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/idShipping"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:layout_gravity="center"
+                    android:text="@string/rs_400_00"
+                    android:textSize="@dimen/font_size_18"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_marginStart="@dimen/dim_10"
+                android:layout_marginEnd="@dimen/dim_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/dim_10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bagTotal"
+                    android:textSize="@dimen/font_size_22"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/idBagTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:layout_gravity="center"
+                    android:text="@string/rs_400_00"
+                    android:textSize="@dimen/font_size_18"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/proceed"
+                style="@style/myOutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dim_20"
+                android:backgroundTint="#000"
+                android:text="@string/proceed_to_checkout"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_size_16" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/dim_15"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="@dimen/dim_5"
+    app:contentPadding="@dimen/dim_15"
+    android:id="@+id/itemCardViewList_Item"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/imageAndDetailLL">
+
+        <ImageView
+            android:id="@+id/sellingItemImageOfListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_120"
+            android:src="@drawable/shoe_image"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/detailLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/sellingItemNameOfListItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/shoe"
+            android:textColor="#000"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/itemDescriptionTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sportsShoe"
+            android:textColor="#B3000000"
+            android:textSize="@dimen/font_size_12"/>
+
+        <LinearLayout
+            android:id="@+id/listItemQtyLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/Qty"
+                android:textColor="#000"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/decrementItemQty"
+                android:layout_width="@dimen/dim_30"
+                android:layout_height="@dimen/dim_30"
+
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/neg"
+                android:textColor="#000"
+
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/noOfItemTV"
+                android:layout_width="@dimen/dim_30"
+                android:layout_height="@dimen/dim_30"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/zero"
+                android:textColor="#000"
+
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/incrementItemQty"
+                android:layout_width="@dimen/dim_30"
+                android:layout_height="@dimen/dim_30"
+                android:background="?selectableItemBackground"
+
+                android:gravity="center"
+                android:text="@string/pos"
+                android:textColor="#000"
+
+                android:textSize="@dimen/font_size_16" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/priceAndCartLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start">
+            <TextView
+                android:id="@+id/priceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:text="@string/rs_400_00"
+                android:textColor="#000"
+                android:textSize="@dimen/font_size_14" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/addToCartTV"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_shortcut_favorite"
+                android:background="#fff"
+                android:layout_marginStart="@dimen/dim_24"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

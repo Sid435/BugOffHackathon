@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">E-Commerce</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="login">LOGIN</string>
+    <string name="orConnectVia">Or Connect Via</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="don_t_have_">Don\'t have an account? Sign up</string>
+    <string name="lets_get_started">Let\'s get started</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="create_account">Create account</string>
+    <string name="alreadyHaveAnAccountSignIn">Already have an account? Sign in</string>
+    <string name="shoe">Campus Shoe</string>
+    <string name="Qty">Qty: </string>
+    <string name="neg">-</string>
+    <string name="zero">0</string>
+    <string name="pos">+</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="Search">Search</string>
+    <string name="nameOfUser">Keshav Srivastrava</string>
+    <string name="emailOfUser">keshav.srivastrava2001@gmail.com</string>
+    <string name="phoneOfUser">6294785462</string>
+    <string name="address">Address</string>
+    <string name="addressOfUser">VITBHOPAL, Kothri PIN: 413456</string>
+    <string name="shoppingCart">Shopping Cart</string>
+    <string name="rs_400_00">Rs: 400</string>
+    <string name="sportsShoe">Get your sports shoe</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="bagTotal">Bag Total</string>
+    <string name="proceed_to_checkout">Proceed To Checkout</string>
+    <string name="_0_items_in_the_cart">0 items are in the cart</string>
+    <string name="buyNow">Buy now</string>
+    <string name="cart">Cart</string>
+    <string name="support">Support</string>
+    <string name="logOut">Logout</string>
+    <string name="myOrder">My Order</string>
+</resources>

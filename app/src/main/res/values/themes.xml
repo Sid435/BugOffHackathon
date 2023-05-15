@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ECommerce" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">#B2B2B2</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="NewFontStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="NewFontStyle2" parent="android:Widget.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+    <style name="myOutlinedButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:paddingLeft">@dimen/dim_28</item>
+        <item name="android:paddingRight">@dimen/dim_28</item>
+        <item name="android:paddingTop">@dimen/dim_18</item>
+        <item name="android:paddingBottom">@dimen/dim_18</item>
+        <item name="strokeColor">#000</item>
+        <item name="strokeWidth">1.5dp</item>
+
+    </style>
+
+
+</resources>
